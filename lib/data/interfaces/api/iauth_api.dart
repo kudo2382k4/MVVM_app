@@ -4,4 +4,8 @@ import '../../dtos/login/login_request_dto.dart';
 
 abstract class IAuthApi {
   Future<LoginResponseDto> login(LoginRequestDto req);
+
+  Future<LoginResponseDto?> getCurrentSession();
+  Future<void> logout();
+
 }

@@ -13,7 +13,7 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   final _userCtrl = TextEditingController(text: 'admin');
-  final _passCtrl = TextEditingController(text: '123456');
+  final _passCtrl = TextEditingController(text: 'admin');
   bool _obscure = false;
 
   @override

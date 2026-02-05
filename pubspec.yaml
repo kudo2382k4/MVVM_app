@@ -30,6 +30,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  #thư viện của sql lite
+  sqflite: ^2.3.3
+  #xử lý việc khác đường dẫn của các nền tảng
+  path: ^1.9.0
+  #dùng để mã hóa mật khẩu
+  crypto: ^3.0.3
 
   provider: ^6.1.2
 

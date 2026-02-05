@@ -41,6 +41,12 @@ class LoginViewmodel extends ChangeNotifier {
     }
   }
 
+  Future<void> logout() async{
+    await repo.logout();
+    session = null;
+    error = null;
+    notifyListeners();
+  }
   void cleanError() {
     if (error != null) {
       error = null;

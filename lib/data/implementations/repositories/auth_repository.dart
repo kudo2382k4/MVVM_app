@@ -19,4 +19,14 @@ class AuthRepository implements IAuthRepository{
     return _authSessionMapper.map(dto);         /// DTO -> Entity
   }
 
+  @override
+  Future<AuthSession?> getCurrentSession() async{
+    final dto = await _authApi.getCurrentSession();
+    if(dto == null) return null;
+    return _authSessionMapper.map(dto);
+  }
+
+  @override
+  Future<void> logout() => _authApi.logout();
+
 }
