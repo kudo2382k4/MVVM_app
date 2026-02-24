@@ -28,5 +28,4 @@ class AuthRepository implements IAuthRepository{
 
   @override
   Future<void> logout() => _authApi.logout();
-
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mvvm_project/viewmodels/login/login_viewmodel.dart';
 import 'package:provider/provider.dart';
 
-import 'home_page.dart';
+import 'home/home_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -13,7 +13,7 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   final _userCtrl = TextEditingController(text: 'admin');
-  final _passCtrl = TextEditingController(text: 'admin');
+  final _passCtrl = TextEditingController(text: 'Fu@2026');
   bool _obscure = false;
 
   @override
