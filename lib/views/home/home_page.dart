@@ -3,6 +3,7 @@ import 'package:mvvm_project/views/login_page.dart';
 import 'package:mvvm_project/views/home/home_header.dart';
 import 'package:mvvm_project/views/home/home_menu_button.dart';
 import 'package:mvvm_project/views/usermanagement/user_management_page.dart';
+import 'package:mvvm_project/views/api_images/api_images_page.dart';
 import 'package:provider/provider.dart';
 
 import '../../viewmodels/login/login_viewmodel.dart';
@@ -71,7 +72,14 @@ class HomePage extends StatelessWidget {
                   icon: Icons.image_search_outlined,
                   label: 'Xem ảnh qua API',
                   iconColor: Colors.lightBlue,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ApiImagesPage(),
+                      ),
+                    );
+                  },
                 ),
                 HomeMenuButton(
                   icon: Icons.flutter_dash_rounded,

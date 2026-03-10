@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:mvvm_project/viewmodels/login/login_viewmodel.dart';
 import 'package:mvvm_project/viewmodels/usermanagement/user_viewmodel.dart';
 import 'package:mvvm_project/views/login_page.dart';
@@ -26,6 +27,17 @@ class MyApp extends StatelessWidget {
       ],
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
+        // Bật localization tiếng Việt cho toàn ứng dụng
+        localizationsDelegates: [
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: [
+          Locale('vi', 'VN'), // Tiếng Việt
+          Locale('en', 'US'), // Tiếng Anh (fallback)
+        ],
+        locale: Locale('vi', 'VN'), // Đặt mặc định là tiếng Việt
         home: LoginPage(),
       ),
     );

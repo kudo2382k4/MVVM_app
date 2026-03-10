@@ -30,6 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   #thư viện của sql lite
   sqflite: ^2.3.3
   #xử lý việc khác đường dẫn của các nền tảng
@@ -38,6 +40,11 @@ dependencies:
   crypto: ^3.0.3
 
   provider: ^6.1.2
+  #hỗ trợ định dạng ngày tháng tiếng Việt
+  intl: ^0.20.2
+
+  http: ^1.2.2
+  webview_flutter: ^4.7.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

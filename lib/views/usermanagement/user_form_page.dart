@@ -108,6 +108,8 @@ class _UserFormPageState extends State<UserFormPage> {
                     TextFormField(
                       controller: _nameController,
                       decoration: _buildInputDecoration('Họ và tên'),
+                      enableSuggestions: false,
+                      autocorrect: false,
                       validator: (v) => (v == null || v.trim().isEmpty) ? 'Vui lòng nhập họ tên' : null,
                     ),
                     const SizedBox(height: 16),
@@ -140,6 +142,8 @@ class _UserFormPageState extends State<UserFormPage> {
                       controller: _addressController,
                       maxLines: 3,
                       decoration: _buildInputDecoration('Địa chỉ'),
+                      enableSuggestions: false,
+                      autocorrect: false,
                       validator: (v) => (v == null || v.trim().isEmpty) ? 'Vui lòng nhập địa chỉ' : null,
                     ),
                   ],
